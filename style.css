@@ -1,0 +1,211 @@
+.hero {
+    
+    height:100vh;
+    width: 100% ;
+    background-image: url(sky.png);
+    background-size: cover;
+    background-position: center;
+    position: relative ;
+    overflow-x: hidden;
+}
+
+.highway{
+    height: 200px ; 
+    width:500% ;
+    display: block ;
+    background-image: url(road.jpg) ;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+      background-repeat: repeat-x;
+    animation: highway 10s linear infinite ; 
+}
+@keyframes highway
+{
+    
+100%{
+    transform: translateX(-3400px); 
+}
+    
+}
+
+.city{
+    
+    height:500px ;
+    width:500%;
+    background-image: url(city.webp) ;
+    position: absolute;
+    bottom: 3000px ; 
+    top: 150px;
+    right: 0;
+    left: 0;
+    display: block;
+    z-index: ;
+    background-repeat: repeat-x ;
+     animation: city 10s linear infinite ;           
+    
+}
+
+@keyframes city
+{
+    
+100%{
+    transform: translateX(-1400px); 
+}
+    
+}
+
+.car{
+    
+    
+    width:400px;
+    left: 50px;
+    bottom: 100px ; 
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;                      
+    
+}
+
+.car img {
+    
+    width:100%; 
+    margin-left: 609px ;
+   animation: car 1s linear infinite ;   
+}
+
+@keyframes car 
+{
+    100%{
+        transform:translateY(-1px);
+    }
+    
+        50%{
+        transform:translateY(1px);
+    }
+        0%{
+        transform:translateY(-1px);
+    }
+    
+    
+}
+
+.wheel{
+    
+    
+    left:50% ;
+    bottom: 178px;
+    transform: translateX(-50%);
+    position: absolute ;
+    z-index: 2;
+    
+}
+
+.wheel img {
+    
+    width:72px ; 
+    height: 72px ;
+}
+
+.black-wheel{
+    left:-165px ;
+    position: absolute;
+      animation: fy 1s linear infinite ;  
+  
+    
+}
+
+.front-wheel{
+    left:80px ;
+    position: absolute;
+      animation: fy 1s linear infinite ;  
+   
+}
+
+@keyframes fy {
+
+100%{
+   transform: rotate(180deg);
+
+}
+
+}
+
+.flay{
+     
+    width:300px;
+    left: 0;
+    top: 50px ;
+  right: 100px;
+    bottom: 50px ; 
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.flay img {
+    
+    width:100%; 
+    margin-left: 200px ;
+   animation: flay 4s linear infinite ;   
+}
+
+
+@keyframes flay 
+{
+    100%{
+      margin-left: 1100px ;
+    }
+    
+        50%{
+        margin-left: 600px ;
+    }
+
+    
+    
+}
+
+.jordan img {
+
+    width: 500px;
+    margin-right: 450px;
+    margin-top: 200px;
+}
+
+
+.pir{
+     
+    width:200px;
+    left: 0;
+    top: 210px ;
+  right: 100px;
+    bottom: 50px ; 
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 2;
+}
+
+.pir img {
+    
+    width:100%; 
+    margin-left: 100px ;
+    margin-top: 200x;
+   animation: flay 8s linear infinite ; 
+}
+
+
+@keyframes pir 
+{
+    100%{
+      margin-left: 1200px ;
+    }
+    
+        50%{
+        margin-top: : 600px ;
+    }
+
+    
+  
+
